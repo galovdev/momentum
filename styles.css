@@ -29,8 +29,6 @@
     orange: #FF7E61
     blue-bg-gradient: 
     gray-gradient:
-
-
 */
 
 nav, main, section, footer{ 
@@ -59,7 +57,7 @@ html, body {
 body { 
     text-rendering: optimize-speed; 
     min-height: 100vh;
-    background: radial-gradient(100% 197.75% at 0% 50%, #29384E 0%, #1D2939 49.66%, #29384E 99.72%);background: radial-gradient(100% 197.75% at 0% 50%, #29384E 0%, #1D2939 49.66%, #29384E 99.72%);
+    background: radial-gradient(50% 50% at 50% 50%, #1D2939 0%, rgba(29, 41, 57, 0.98) 100%);
 }
 
 a {
@@ -81,9 +79,9 @@ img, picture, svg {
      html:focus-within { scroll-behavior:auto; }
 }
 
-set containers to { width: 88%; max-width: 1400px;  }
+.nav-container { width: 92%; max-width: 1600px; margin: 0 auto}
 
-.nav-container { width: 94%; max-width: 1600px; margin: 0 auto}
+.main-container, .cards-container { width: 80%; max-width: 1600px; margin: 0 auto}
 
 .nav-container {
     display: flex;
@@ -116,4 +114,56 @@ set containers to { width: 88%; max-width: 1400px;  }
     background-color: white;
     border-radius: 6px;
     color: #28374D;
+}
+
+.nav-join a:hover {
+    color: #FF7E61;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container h1{
+    color: #EAECF0;
+    font-family: intermedium;
+    letter-spacing: 0.02rem;
+    font-size: 1.1rem;
+}
+
+.cards-container {
+
+}
+
+.section-subtitle {
+    font-family: CartographBold;
+    color: #FF7E61;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.06rem;
+}
+
+.section-title {
+    font-family: intersemibold;
+    color: white;
+    letter-spacing: 0.018rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.1em 0em 0.34em 0em;
+}
+
+.section-description{
+    font-family: intermedium;
+    color: #EAECF0;
+    text-align: center;
+}
+
+.faq .q{
+    color: #EAECF0;
+}
+
+.faq .a{
+    color: #EAECF0;
 }
