@@ -1,0 +1,119 @@
+@font-face {
+    font-family: CartographBold;
+    src: url(CartographCF-Bold.ttf);
+}
+
+@font-face {
+    font-family: CartographSemiBold;
+    src: url(CartographCF-DemiBold.ttf);
+}
+
+@font-face {
+    font-family: intermedium;
+    src: url(Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: intersemibold;
+    src: url(Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: interbold;
+    src: url(CartographCF-DemiBold.ttf);
+}
+
+/*
+    white:  #FFFFFF
+    gray: #EAECF0
+    orange: #FF7E61
+    blue-bg-gradient: 
+    gray-gradient:
+
+
+*/
+
+nav, main, section, footer{ 
+    width: 100%;
+}
+
+*{ 
+    margin:0; 
+    padding: 0; 
+    font: inherit;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type:none; 
+}
+
+html:focus-within {
+     scroll-behavior: smooth 
+    }
+
+html, body {
+    height:100% 
+} 
+
+body { 
+    text-rendering: optimize-speed; 
+    min-height: 100vh;
+    background: radial-gradient(100% 197.75% at 0% 50%, #29384E 0%, #1D2939 49.66%, #29384E 99.72%);background: radial-gradient(100% 197.75% at 0% 50%, #29384E 0%, #1D2939 49.66%, #29384E 99.72%);
+}
+
+a {
+    text-decoration: none;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing:border-box;
+}
+
+img, picture, svg {
+    max-width: 100%;
+    display: block
+}
+
+@media (prefers-reduced-motion: reduce) {
+     html:focus-within { scroll-behavior:auto; }
+}
+
+set containers to { width: 88%; max-width: 1400px;  }
+
+.nav-container { width: 94%; max-width: 1600px; margin: 0 auto}
+
+.nav-container {
+    display: flex;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: intermedium;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    margin: 0em 0.1em;
+    letter-spacing: 0.05rem;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
+
+.nav-menu a:hover {
+    background: rgba(244, 244, 245, 0.1);
+}
+
+.nav-join a{
+    padding: 0.5em 1em;
+    background-color: white;
+    border-radius: 6px;
+    color: #28374D;
+}
