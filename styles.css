@@ -81,7 +81,7 @@ img, picture, svg {
 
 .nav-container { width: 92%; max-width: 1600px; margin: 0 auto}
 
-.main-container, .cards-container { width: 80%; max-width: 1600px; margin: 0 auto}
+.main-container, .cards-container, .team-container { width: 88%; max-width: 1600px; margin: 0 auto}
 
 .nav-container {
     display: flex;
@@ -160,10 +160,70 @@ img, picture, svg {
     text-align: center;
 }
 
+.team-grid{
+    margin: 2em auto;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 1.4em;
+    transform: translateY(-50%);
+  }
+  
+  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translateY(-50%);
+  }
+
+.team-card{
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(180deg, rgba(244, 244, 245, 0.14) 0%, rgba(244, 244, 245, 0.084) 99.85%);
+    mix-blend-mode: normal;
+    border-radius: 22px;
+}
+
+.team-pfp {
+    border-radius: 22px;
+}
+
+.team-title {
+    font-family: intersemibold;
+    color: #EAECF0;
+    font-size: 1.68rem;
+    letter-spacing: 0.02rem;
+    padding-top: 1.2em;
+}
+
+.team-subtitle{
+    font-family: CartographBold;
+    color: #FF7E61;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.06rem;
+    padding: 0.1em 0em;
+}
+
+.team-twitter-icon {
+    color: #EAECF0;
+    padding-bottom: 2em;
+}
+
+.team-twitter-icon:hover {
+    color: #d1d1d1;
+}
+
 .faq .q{
     color: #EAECF0;
 }
 
 .faq .a{
+    color: #EAECF0;
+}
+
+.fa-angle-right, .fa-angle-left {
     color: #EAECF0;
 }
