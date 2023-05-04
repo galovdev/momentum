@@ -23,6 +23,32 @@
     src: url(CartographCF-DemiBold.ttf);
 }
 
+@font-face {
+    font-family: ChakraPetchLight;
+    src: url(ChakraPetch-Light.ttf);
+}
+
+@font-face {
+    font-family: ChakraPetchMedium;
+    src: url(ChakraPetch-Medium.ttf);
+}
+
+@font-face {
+    font-family: ChakraPetchSemibold;
+    src: url(ChakraPetch-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: ChakraPetchBold;
+    src: url(ChakraPetch-Bold.ttf);
+}
+
+@font-face {
+    font-family: ChakraPetchBoldRegular;
+    src: url(ChakraPetch-Regular.ttf);
+}
+
+
 /*
     white:  #FFFFFF
     gray: #EAECF0
@@ -57,7 +83,9 @@ html, body {
 body { 
     text-rendering: optimize-speed; 
     min-height: 100vh;
-    background: radial-gradient(50% 50% at 50% 50%, #1D2939 0%, rgba(29, 41, 57, 0.98) 100%);
+    background-color: whitesmoke;
+    /* background: radial-gradient(50% 50% at 50% 50%, #1D2939 0%, rgba(29, 41, 57, 0.98) 100%);
+    background-color: #10263D */
 }
 
 a {
@@ -98,6 +126,11 @@ img, picture, svg {
 .nav-menu ul{
     display: flex;
 }
+
+.pfp-logo-nav{
+    max-width: 50px;
+}
+
 
 .nav-menu a{
     text-decoration: none;
