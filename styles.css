@@ -83,9 +83,9 @@ html, body {
 body { 
     text-rendering: optimize-speed; 
     min-height: 100vh;
-    background-color: whitesmoke;
-    /* background: radial-gradient(50% 50% at 50% 50%, #1D2939 0%, rgba(29, 41, 57, 0.98) 100%);
-    background-color: #10263D */
+    background: radial-gradient(50% 50% at 50% 50%, #1D2939 0%, rgba(29, 41, 57, 0.98) 100%);
+    /* background-color: #10263D
+    background-color: whitesmoke; */
 }
 
 a {
@@ -108,7 +108,7 @@ img, picture, svg {
 }
 
 
-.nav-container, .main-container, .cards-container, .team-container { width: 90%; max-width: 1600px; margin: 0 auto}
+.nav-container, .main-container, .cards-container, .team-container, .faq-container { width: 90%; max-width: 1600px; margin: 0 auto}
 
 .cards-container { width: 68%; max-width: 1600px; margin: 0 auto}
 
@@ -130,7 +130,6 @@ img, picture, svg {
 .pfp-logo-nav{
     max-width: 50px;
 }
-
 
 .nav-menu a{
     text-decoration: none;
@@ -160,13 +159,18 @@ img, picture, svg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 12em 0em;
+}
+
+.logo {
+    padding: 1.6em 0em;
 }
 
 .main-container h1{
     color: #EAECF0;
     font-family: intermedium;
-    letter-spacing: 0.02rem;
-    font-size: 1.1rem;
+    letter-spacing: 0.024rem;
+    font-size: 1.18rem;
 }
 
 .section-subtitle {
@@ -323,16 +327,12 @@ img, picture, svg {
     color: #c4c4c4;
 }
 
-.faq .q{
-    color: #EAECF0;
-}
-
 .faq .a{
     color: #EAECF0;
 }
 
 .fa-angle-right, .fa-angle-left {
-    color: #EAECF0;
+    color: #ffffff;
     text-shadow: 2px 2px 10px rgb(61, 61, 61);
 }
 
@@ -342,6 +342,96 @@ img, picture, svg {
 
 .partner-subtitle {
     text-align: center;
+}
+
+.faq {
+    text-align: center;
+    font-family: InterSemiBold;
+    list-style: none;
+    margin: 3em auto;
+    padding-bottom: 4em;
+}
+
+.q {
+    display: flex;
+    justify-content: space-between;
+    color: #EAECF0;
+    padding: 1.6em 1em;
+    cursor: pointer;
+    letter-spacing: 0.01rem;
+    margin: 0.8em 0em;
+    background: linear-gradient(180deg, rgba(244, 244, 245, 0.1) 0%, rgba(244, 244, 245, 0.06) 99.85%)
+}
+
+.q:hover,
+.q:hover .arrow {
+    border-left-color: red;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    transition: 0.3s;
+    padding-right: 1rem;
+}
+
+.faq p{
+    color: #111111;
+    line-height: 1.5rem;
+    font-family: InterRegular;
+    letter-spacing: 0.02rem;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.a {
+    overflow: hidden;
+    height: 0;
+    padding: 0rem 1rem 0rem 3rem;
+    color: #EAECF0;
+}
+
+.a-opened {
+    padding: 0rem 0rem 1.2rem 0rem;
+    height: initial;
+}
+
+.arrow-rotated {
+    transform: rotate(45deg);
+    padding-bottom: 0.1rem;
+}
+
+.faq h1 {
+    letter-spacing: 0.16rem;
+    padding: 0rem 0em 3.4em 0em;
+    margin: 0%;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 15rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.q-a-hr {
+    height: 1.8px;
+    border: 0; 
+    border-top: 1.8px solid #e5e4e2;
+    margin: 1.8em 15em;
+}
+
+.fa-chevron-down {
+    padding-left: 0.3em;
+    cursor: pointer;
 }
 
 

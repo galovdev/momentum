@@ -18,5 +18,16 @@ $(document).ready(function(){
     });
   });
 
+const q = document.getElementsByClassName("q");
+const a = document.getElementsByClassName("a");
+const arr = document.getElementsByClassName("arrow");
+
+for(let i = 0; i < q.length; i++) {
+    q[i].addEventListener("click", () => {
+        a[i].classList.toggle("a-opened");
+        arr[i].classList.toggle("arrow-rotated");     
+    });
+} 
+
 
   
