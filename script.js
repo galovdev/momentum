@@ -24,10 +24,55 @@ const arr = document.getElementsByClassName("arrow");
 
 for(let i = 0; i < q.length; i++) {
     q[i].addEventListener("click", () => {
-        a[i].classList.toggle("a-opened");
-        arr[i].classList.toggle("arrow-rotated");     
+        a[i].classList.toggle("a-opened");   
+        arr[i].classList.toggle("arrow-rotated");
     });
 } 
 
+$(document).ready(function() {
+  $("a[href='#product-section']").click(function(e) {
+    e.preventDefault();
+    var headerHeight = 110;
+    $("html, body").animate({
+      scrollTop: $("#product-section").offset().top - headerHeight
+    }, 10);
+  });
+});
 
-  
+$(document).ready(function() {
+  $("a[href='#team-section']").click(function(e) {
+    e.preventDefault();
+    var headerHeight = 110;
+    $("html, body").animate({
+      scrollTop: $("#team-section").offset().top - headerHeight
+    }, 10);
+  });
+});
+
+$(document).ready(function() {
+  $("a[href='#partnerships-section']").click(function(e) {
+    e.preventDefault();
+    var headerHeight = 110;
+    $("html, body").animate({
+      scrollTop: $("#partnerships-section").offset().top - headerHeight
+    }, 10);
+  });
+});
+
+
+$(document).ready(function() {
+  $("a[href='#faq-section']").click(function(e) {
+    e.preventDefault();
+    var headerHeight = 110;
+    $("html, body").animate({
+      scrollTop: $("#faq-section").offset().top - headerHeight
+    }, 10);
+  });
+});
+
+// Toggle submenu when parent is clicked
+$('.dropdown > a').click(function(e) {
+  e.preventDefault();
+  $(this).parent().toggleClass('active');
+});
+
