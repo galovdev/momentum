@@ -1,56 +1,21 @@
 @font-face {
-    font-family: CartographBold;
-    src: url(CartographCF-Bold.ttf);
-}
-
-@font-face {
-    font-family: CartographSemiBold;
-    src: url(CartographCF-DemiBold.ttf);
-}
-
-@font-face {
     font-family: interregular;
-    src: url(Inter-VariableFont_slnt\,wght.ttf);
+    src: url(assets/fonts/Inter-Variable.ttf);
 }
 
 @font-face {
     font-family: intermedium;
-    src: url(Inter-Medium.ttf);
+    src: url(assets/fonts/Inter-Medium.ttf);
 }
 
 @font-face {
     font-family: intersemibold;
-    src: url(Inter-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: interbold;
-    src: url(CartographCF-DemiBold.ttf);
-}
-
-@font-face {
-    font-family: ChakraPetchLight;
-    src: url(ChakraPetch-Light.ttf);
-}
-
-@font-face {
-    font-family: ChakraPetchMedium;
-    src: url(ChakraPetch-Medium.ttf);
+    src: url(assets/fonts/Inter-SemiBold.ttf);
 }
 
 @font-face {
     font-family: ChakraPetchSemibold;
-    src: url(ChakraPetch-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: ChakraPetchBold;
-    src: url(ChakraPetch-Bold.ttf);
-}
-
-@font-face {
-    font-family: ChakraPetchBoldRegular;
-    src: url(ChakraPetch-Regular.ttf);
+    src: url(assets/fonts/ChakraPetch-SemiBold.ttf);
 }
 
 
@@ -62,31 +27,31 @@
     gray-gradient:
 */
 
-nav, main, section, footer{ 
+nav, main, section, footer {
     width: 100%;
 }
 
-*{ 
-    margin:0; 
-    padding: 0; 
+* {
+    margin: 0;
+    padding: 0;
     font: inherit;
     box-sizing: border-box;
 }
 
 ul {
-    list-style-type:none; 
+    list-style-type: none;
 }
 
 html:focus-within {
-     scroll-behavior: smooth 
-    }
+    scroll-behavior: smooth
+}
 
 html, body {
-    height:100% 
-} 
+    height: 100%
+}
 
-body { 
-    text-rendering: optimize-speed; 
+body {
+    text-rendering: optimizeSpeed;
     min-height: 100vh;
     background: radial-gradient(50% 50% at 50% 50%, #1D2939 0%, rgba(29, 41, 57, 0.98) 100%);
     /* background-color: #10263D
@@ -97,10 +62,10 @@ a {
     text-decoration: none;
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 img, picture, svg {
@@ -109,19 +74,41 @@ img, picture, svg {
 }
 
 @media (prefers-reduced-motion: reduce) {
-     html:focus-within { scroll-behavior:auto; }
+    html:focus-within {
+        scroll-behavior: auto;
+    }
 }
 
-.nav-container, .main-container, .cards-container, .team-container, .faq-container, .footer-container { width: 90%; max-width: 1600px; margin: 0 auto}
+.nav-container, .main-container, .cards-container, .team-container, .faq-container, .footer-container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto
+}
 
-.cards-container { width: 68%; max-width: 1600px; margin: 0 auto }
+.cards-container {
+    width: 68%;
+    max-width: 1600px;
+    margin: 0 auto
+}
 
-.card-order { width: 90%; max-width: 1600px; margin: 0 auto}
+.card-order {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto
+}
 
-.partnerships-container { width: 58%; max-width: 1600px; margin: 0 auto }
+.partnerships-container {
+    width: 58%;
+    max-width: 1600px;
+    margin: 0 auto
+}
 
 
-@media(max-width: 600px) {.cards-container {width: 92%}}
+@media (max-width: 600px) {
+    .cards-container {
+        width: 92%
+    }
+}
 
 .nav-container {
     display: flex;
@@ -134,53 +121,89 @@ img, picture, svg {
 
 .submenu {
     display: none;
-  }
-  
-  /* Display submenu when parent is hovered */
-  .dropdown:hover .submenu {
+}
+
+/* Display submenu when parent is hovered */
+.dropdown:hover .submenu {
     display: block;
-  }
-  
+}
+
 
 .submenu {
     display: none;
-  }
-  
-  /* Display submenu when parent is hovered */
-  .dropdown:hover .submenu {
+}
+
+/* Display submenu when parent is hovered */
+.dropdown:hover .submenu {
     display: block;
-  }
-  
+}
+
+.nav-menu .icon {
+    display: none;
+    background: rgba(244, 244, 245, 0.1);
+}
+
+.nav-menu .icon i {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
 
 @media (max-width: 600px) {
-    .nav-container {
-        flex-direction: column;
+
+    .nav-menu li:not(:last-child) {
+        display: none;
     }
-    /* Hide main menu items */
-.nav-menu ul.menu > li {
-  display: none;
-}
-      
-        /* Display "More" menu item */
-.nav-menu ul.menu > li.dropdown {
-  display: block;
-}
-      
-        /* Display submenu when "More" is clicked */
-.nav-menu ul.menu > li.dropdown.active .submenu {
-  display: block;
-}
+
+    /*!* Hide main menu items *!*/
+    /*.nav-menu ul.menu > li {*/
+    /*    display: none;*/
+    /*}*/
+    /* Display "More" menu item */
+    .nav-menu .icon {
+        display: block;
+    }
+
+    /* Display submenu when "More" is clicked */
+    .nav-menu ul.menu > li.dropdown.active .submenu {
+        display: block;
+    }
+
+    /*.nav-menu .icon {*/
+    /*    display: block;*/
+    /*}*/
+    #dropdown-active {
+        display: none;
+        background: rgba(244, 244, 245, 0.1);
+        padding-bottom: 3vh;
+        font-family: intermedium;
+        font-size: 1rem;
+    }
+
+    #dropdown-active .nav-options-active a {
+        text-decoration: none;
+        letter-spacing: 0.05rem;
+        color: white;
+        border-radius: 6px;
+    }
+
+    #dropdown-active .nav-options-active li {
+        margin: 1.2vh 0;
+    }
+
+    .nav-options-active {
+        margin: auto 5vw;
+    }
 }
 
-.nav-menu ul{
+.nav-menu ul {
     display: flex;
 }
 
-.pfp-logo-nav{
+.pfp-logo-nav {
     max-width: 50px;
 }
 
-.nav-menu a{
+.nav-menu a {
     text-decoration: none;
     margin: 0em 0.1em;
     letter-spacing: 0.05rem;
@@ -193,7 +216,7 @@ img, picture, svg {
     background: rgba(244, 244, 245, 0.1);
 }
 
-.nav-join a{
+.nav-join a {
     padding: 0.5em 1em;
     background-color: white;
     border-radius: 6px;
@@ -204,29 +227,31 @@ img, picture, svg {
     color: #FE8163;
 }
 
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 600px; 
-    background-image: url("Group\ 15MAIN_BACKGROUND_1.svg");
+    min-height: 600px;
+    background-image: url("assets/images/main/background.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; 
-    max-width: 800px; 
-  }
+    text-align: center;
+    max-width: 800px;
+}
 
 .logo {
     padding: 1.6em 0em;
 }
 
-.main-container h1{
+.main-container h1 {
     color: #EAECF0;
     font-family: intermedium;
     letter-spacing: 0.024rem;
@@ -250,7 +275,7 @@ main {
     padding: 0.2em 0em 0.6em 0em;
 }
 
-.section-description{
+.section-description {
     font-family: intermedium;
     color: #EAECF0;
     text-align: center;
@@ -270,10 +295,10 @@ main {
                         "alpha mint"
                         "whitelist whitelist"
                         "education partnerships";
-                        grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width:600px){
+@media (max-width: 600px) {
     .cards-grid {
         grid-template-areas: 
         "networking"
@@ -282,16 +307,19 @@ main {
         "whitelist"
         "education"
         "partnerships";
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-    main {min-height: 400px;}
+
+    main {
+        min-height: 400px;
+    }
 }
 
 .networking-card {
     grid-area: networking;
 }
 
-.networking-card img{
+.networking-card img {
     max-width: 110px;
 }
 
@@ -299,7 +327,7 @@ main {
     grid-area: mint;
 }
 
-.mint-card img{
+.mint-card img {
     max-width: 140px;
 }
 
@@ -315,7 +343,7 @@ main {
     grid-area: whitelist;
 }
 
-.whitelist-card img{
+.whitelist-card img {
     max-width: 110px;
 }
 
@@ -323,15 +351,15 @@ main {
     grid-area: education;
 }
 
-.partners-card{
+.partners-card {
     grid-area: partnerships;
 }
 
-.education-card img{
+.education-card img {
     max-width: 80px;
 }
 
-.partners-card img{
+.partners-card img {
     max-width: 150px;
 }
 
@@ -353,7 +381,7 @@ main {
     text-align: center;
 }
 
-.card-description{
+.card-description {
     font-family: intermedium;
     color: #EAECF0;
     letter-spacing: 0.03rem;
@@ -369,6 +397,7 @@ main {
 .owl-carousel {
     margin: 2em auto;
 }
+
 .owl-carousel .team-card {
     transition: all 0.26s ease-out;
 }
@@ -384,15 +413,15 @@ main {
     left: 1.4em;
     transform: translateY(-50%);
 }
-  
+
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
     top: 50%;
     right: 1.4em;
     transform: translateY(-50%);
 }
- 
-.team-card{
+
+.team-card {
     text-align: center;
     cursor: pointer;
     background: linear-gradient(180deg, rgba(244, 244, 245, 0.14) 0%, rgba(244, 244, 245, 0.084) 99.85%);
@@ -413,7 +442,7 @@ main {
     padding-top: 1.16em;
 }
 
-.team-subtitle{
+.team-subtitle {
     font-family: ChakraPetchSemibold;
     color: #FE8163;
     text-align: center;
@@ -431,7 +460,7 @@ main {
     color: #c4c4c4;
 }
 
-.faq .a{
+.faq .a {
     color: #EAECF0;
 }
 
@@ -459,12 +488,12 @@ main {
 }
 
 .glide {
-    margin: 0 auto; 
+    margin: 0 auto;
     position: relative;
     align-items: center;
-  }
-  
-  .glide__arrows {
+}
+
+.glide__arrows {
     position: absolute;
     top: 50%;
     left: 0;
@@ -472,16 +501,16 @@ main {
     display: flex;
     justify-content: center;
     border: none;
-    
-  }
 
-  .glide__arrow i.iconx {
+}
+
+.glide__arrow i.iconx {
     font-size: 24px;
     color: #EAECF0;
     border: none;
-  }
-  
-  .glide__arrow {
+}
+
+.glide__arrow {
     font-size: 30px;
     color: #555;
     background: transparent;
@@ -492,18 +521,18 @@ main {
     justify-content: center;
     top: 50%;
     transform: translateY(-50%);
-  }
+}
 
-  .glide__arrow:before {
+.glide__arrow:before {
     border: none !important;
-  }
+}
 
-  .glide__slide {
+.glide__slide {
     transition: transform 0.6s ease;
     align-items: center;
-  }
+}
 
-.partner-title{
+.partner-title {
     font-family: intersemibold;
     color: white;
     font-size: 1.6rem;
@@ -540,8 +569,8 @@ main {
 .partner-links {
     text-align: center;
 }
-  
-.partner-links i{
+
+.partner-links i {
     color: #EAECF0
 }
 
@@ -550,7 +579,7 @@ main {
     max-height: 180px;
 }
 
-.card-left{
+.card-left {
     width: 34%;
 }
 
@@ -604,7 +633,7 @@ main {
     color: #EAECF0;
 }
 
-.a p{
+.a p {
     padding: 0rem 1.4rem;
     line-height: 1.4rem;
     font-family: interregular;
@@ -618,10 +647,10 @@ main {
     height: initial;
 }
 
-  .arrow-rotated {
+.arrow-rotated {
     transform: rotate(45deg);
-  }
-  
+}
+
 
 .faq h1 {
     letter-spacing: 0.16rem;
@@ -634,8 +663,11 @@ main {
     flex-direction: column;
 }
 
-@media (max-width:600px) {
-    .question-p {text-align:start; display: flex;}
+@media (max-width: 600px) {
+    .question-p {
+        text-align: start;
+        display: flex;
+    }
 }
 
 .question-icon {
@@ -649,12 +681,12 @@ main {
 
 .q-a-hr {
     height: 1.8px;
-    border: 0; 
+    border: 0;
     border-top: 1.8px solid #e5e4e2;
     margin: 1.8em 15em;
 }
 
-.a-grant p{
+.a-grant p {
     line-height: 2.6em;
 }
 
@@ -681,7 +713,7 @@ main {
     display: flex;
 }
 
-.footer-info a, .footer-info p{
+.footer-info a, .footer-info p {
     padding-right: 1.2em;
 }
 
@@ -689,7 +721,7 @@ main {
     display: flex;
 }
 
-.footer-info-link:hover{
+.footer-info-link:hover {
     color: #c4c4c4;
     cursor: pointer;
 }
@@ -709,26 +741,67 @@ main {
         align-items: center;
         justify-content: space-between;
     }
-    .footer-info p{
+
+    .footer-info p {
         padding: 0em 0em 1em 0em;
     }
+
     .footer-icon {
         padding: 0;
     }
+
     .footer-links {
         gap: 1em;
     }
-    .partnerships-container {width: 92%} 
-    .card-order {width: 96%; display: flex; flex-direction: column; padding: 1.2em 2em; min-height: 600px; align-items: center; justify-content: center;}
-    .card-order img{ padding-bottom: 2em;}
-    .partner-subtitle {padding:0.8em 0em 1.4em 0em}
-    .faq {padding-bottom: 0em;}
-    .section-subtitle {margin-top: 0em; font-size: 1.04rem; padding: 0.4rem 0.8rem;}
-    .section-title {font-size: 1.3rem;}
-    .section-description {margin-bottom: 2rem;}
-    .card-title {font-size: 1.2rem;}
+
+    .partnerships-container {
+        width: 92%
+    }
+
+    .card-order {
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.2em 2em;
+        min-height: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-order img {
+        padding-bottom: 2em;
+    }
+
+    .partner-subtitle {
+        padding: 0.8em 0em 1.4em 0em
+    }
+
+    .faq {
+        padding-bottom: 0em;
+    }
+
+    .section-subtitle {
+        margin-top: 0em;
+        font-size: 1.04rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .section-description {
+        margin-bottom: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
     .card-left {
-        display:flex; align-items: center; justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

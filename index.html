@@ -5,576 +5,653 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum</title>
-    <link rel="icon" href="Layer_1M PARA NAV.svg">
+    <link rel="icon" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
 </head>
 <body>
 
-    <nav>
+<nav id="dropdown-inactive">
 
-        <div class="nav-container">
+    <div class="nav-container">
 
-            <div class="nav-logo">
-                <img class="pfp-logo-nav" src="Layer_1M PARA NAV.svg">
+        <div class="nav-logo">
+            <img class="pfp-logo-nav" src="assets/images/main/nav-logo.svg">
+        </div>
+
+        <div class="nav-menu">
+            <ul class="menu">
+                <li><a href="#product-section">Product</a></li>
+                <li><a href="#team-section">Team</a></li>
+                <li><a href="#partnerships-section">Partnerships</a></li>
+                <li><a href="#faq-section">FAQ</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="showMobileMenu()"><i class="fa fa-bars"></i>
+                    &nbsp; Menu</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-join">
+            <a target="_blank" href="https://opensea.io/collection/momentum-official">Join</a>
+        </div>
+
+    </div>
+
+</nav>
+
+<nav id="dropdown-active">
+    <div class="nav-container">
+
+        <div class="nav-logo">
+            <img class="pfp-logo-nav" src="assets/images/main/nav-logo.svg">
+        </div>
+
+        <div class="nav-menu">
+            <ul class="menu">
+
+                <li><a href="javascript:void(0);" class="icon" onclick="closeMobileMenu()"><i class="fa fa-bars"></i>
+                    &nbsp; Menu</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-join">
+            <a target="_blank" href="https://opensea.io/collection/momentum-official">Join</a>
+        </div>
+
+    </div>
+    <div class="nav-options-active">
+        <ul>
+            <li><a href="#product-section">Product</a></li>
+            <li><a href="#team-section">Team</a></li>
+            <li><a href="#partnerships-section">Partnerships</a></li>
+            <li><a href="#faq-section">FAQ</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<main>
+
+    <div class="main-container">
+        <h1 class="main-subtitle">Discover the next Big Thing.</h1>
+        <img class="logo" src="assets/images/main/full-logo.svg"></img>
+        <h1 class="main-title">Experience the new generation of trading: Join Momentum.</h1>
+    </div>
+
+</main>
+
+<section id="product-section">
+
+    <div class="cards-container">
+
+        <div class="cards-titles">
+            <h3 class="section-subtitle">PRODUCT</h3>
+            <h1 class="section-title">Experience the new generation of trading.</h1>
+            <h2 class="section-description">Join Momentum and gain access to a network of experienced investors and
+                traders who are always on the lookout for the latest mints and investment opportunities. </h2>
+        </div>
+
+        <div class="cards-grid">
+
+            <div class="info-card networking-card">
+                <p class="card-title">Networking</p>
+                <p class="card-description">Expand your network by connecting with the most successful traders in the
+                    industry.</p>
+                <img src="assets/images/product/networking.svg" class="card-illustration"></img>
             </div>
 
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="#product-section">Product</a></li>
-                    <li><a href="#team-section">Team</a></li>
-                    <li><a href="#partnerships-section">Partnerships</a></li>
-                    <li><a href="#faq-section">FAQ</a></li>
+            <div class="info-card mint-card">
+                <p class="card-title">Tools</p>
+                <p class="card-description monitor-description"> Access to a suite of tools to maximize profitability in
+                    trades: <br>
+
+                    &#xB7; Profit Bot, wallet tracking and new verified contracts. <br>
+
+                    &#xB7; AlphaGardeners suite, Synergy droplist, Bluetracker to discover new projects early. <br>
+
+                    &#xB7; Inhouse tools (NFT contract parser, Daily summaries ganerator, Contribution system and
+                    leaderboard for prizes, crypto movement alerts, Airdrop farming AIO bot + more in the works. <br>
+
+                </p>
+
+
+                <img src="assets/images/product/tools.svg" class="card-illustration"></img>
+            </div>
+
+            <div class="info-card alpha-card">
+                <p class="card-title">Curated Alpha</p>
+                <p class="card-description">Carefully curated alpha from top traders in the industry.</p>
+                <img src="assets/images/product/alpha.svg" class="card-illustration"></img>
+            </div>
+
+            <div class="info-card whitelist-card">
+                <p class="card-title">Whitelist Opportunities</p>
+                <p class="card-description">Exclusive early access to NFT launches, web3 apps and Momentum products,
+                    including highly anticipated mints.</p>
+                <img src="assets/images/product/whitelists.svg" class="card-illustration"></img>
+            </div>
+
+            <div class="info-card education-card">
+                <p class="card-title">Web3 Education</p>
+                <p class="card-description">High quality web3 videos, daily charts and documentation.</p>
+                <img src="assets/images/product/education.svg" class="card-illustration"></img>
+            </div>
+
+            <div class="info-card partners-card">
+                <p class="card-title">Exclusive Partnerships</p>
+                <p class="card-description">Partnerships with top notch products and teams.</p>
+                <img src="assets/images/product/partnerships.svg" class="card-illustration"></img>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+    <div class="the-pass-container">
+
+    </div>
+</section>
+
+<section id="team-section">
+
+    <div class="team-container">
+
+        <div class="team-titles">
+            <h3 class="section-subtitle">TEAM</h3>
+            <h1 class="section-title">Meet our team</h1>
+            <h2 class="section-description section-description-team">The Momentum team is a collective of analysts,
+                researchers, developers and investors.</h2>
+        </div>
+
+        <div class="owl-carousel team-grid">
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/aura.webp">
+                <p class="team-title">Aura</p>
+                <p class="team-subtitle">FOUNDER</p>
+                <a href="https://twitter.com/NFTAura"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/linko.webp">
+                <p class="team-title">Linkoman</p>
+                <p class="team-subtitle">CRYPTO ANALYST</p>
+                <a href="https://twitter.com/Linkomanft"><i
+                        class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/ape.webp">
+                <p class="team-title">Ape</p>
+                <p class="team-subtitle">DEFI RESEARCHER</p>
+                <a href="https://twitter.com/Apenomics101"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/agony.webp">
+                <p class="team-title">0xAgony</p>
+                <p class="team-subtitle">DEVELOPER</p>
+                <a href="https://twitter.com/0xAgony"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/galo.webp">
+                <p class="team-title">Galovdev</p>
+                <p class="team-subtitle">DEVELOPER</p>
+                <a href=""><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/dtk.webp">
+                <p class="team-title">DTK</p>
+                <p class="team-subtitle">RESEARCHER</p>
+                <a href="https://twitter.com/DTKcrypto"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/catinho.webp">
+                <p class="team-title">Catinho</p>
+                <p class="team-subtitle">COMMUNITY MANAGER</p>
+                <a href="https://twitter.com/CatinhoNFT"><i
+                        class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/mrdoge.webp">
+                <p class="team-title">MrDoge</p>
+                <p class="team-subtitle">COLLAB MANAGER</p>
+                <a href="https://twitter.com/Dogelikesnft"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/prada.webp">
+                <p class="team-title">Prada</p>
+                <p class="team-subtitle">HEAD MARKETING</p>
+                <a href="https://twitter.com/NFTPrada"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/tarzan.webp">
+                <p class="team-title">Tarzan</p>
+                <p class="team-subtitle">COLLAB MANAGER</p>
+                <a href="https://twitter.com/tarzan_smol"><i
+                        class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+            <div class="team-card">
+                <img class="team-pfp" src="assets/images/team/theo.webp">
+                <p class="team-title">Theo</p>
+                <p class="team-subtitle">RESEARCHER</p>
+                <a href="https://twitter.com/theo2k2_"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="partnerships-section">
+
+    <div class="partnerships-container">
+
+        <div class="partnership-titles">
+            <h3 class="section-subtitle">PARTNERSHIPS</h3>
+            <h1 class="section-title">The best partnerships in the space</h1>
+            <h2 class="section-description">We strive to offer exceptional value to our members by partnering with
+                leading brands and organizations in the industry.</h2>
+        </div>
+
+        <div class="glide">
+
+            <div class="glide__track" data-glide-el="track">
+
+                <ul class="glide__slides">
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/breeze.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">BreezeAIO</p>
+                                <p class="partner-type">ANALYTICS</p>
+                                <p class="partner-subtitle">
+                                    BreezeAIO is an analytical and automation bot with many features for users.
+                                    Our members receive 20% discounted monthly access to their tool.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/BreezeAIO"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://breeze.gg/"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.com/invite/breezeaio"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/3gm.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">3gm</p>
+                                <p class="partner-type">ANALYTICS</p>
+                                <p class="partner-subtitle">
+                                    3gmdev is a host of various analytical and data science tools that can applied to
+                                    trader's regiments such as identifying quick profit/loss during trades.
+                                    Our members have free access to 3GM's profit/loss bot.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/3gmdev"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://3gm.dev/"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.com/invite/3gm"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/synergy.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">Synergy</p>
+                                <p class="partner-type">NETWORK</p>
+                                <p class="partner-subtitle">
+                                    SynergyPass is an exclusive alpha network. They focus on promoting empowerment,
+                                    resources, and well-written research on the NFT landscape. Our members have free
+                                    access to
+                                    Matty's curated daily drop list and live-pings notifications.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/SynergyPass"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://www.synergypass.io/"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.com/invite/synergy"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/nerds.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">NFT Nerds</p>
+                                <p class="partner-type">TOOLS</p>
+                                <p class="partner-subtitle">
+                                    NFTNerdsAI is an analytical driven platform. They focus on providing real-time
+                                    analytics and charting software to help traders facilitate decision making
+                                    processes.
+                                    Our members have discounted access and trials.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/NFTNerdsAI"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://nftnerds.ai/"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.com/invite/NFTNerdsr"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/alphagardeners.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">Alpha Gardeners</p>
+                                <p class="partner-type">ANALYTICS</p>
+                                <p class="partner-subtitle">
+                                    Alpha Gardeners is an all-in-one alpha discord with a complete toolkit for
+                                    successful NFTs and Memecoins trading. Contract mint, wallets, and Momentum
+                                    tracking.
+                                    Our members have free access to their toolkit to track notable movements of
+                                    prominent traders.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/alpha_gardeners"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://linktr.ee/alpha_gardeners"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.com/invite/ZCzudbbJhz"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/thunder.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">Thunder</p>
+                                <p class="partner-type">TOOLS</p>
+                                <p class="partner-subtitle">
+                                    NFT Thunder is an automation and minting bot with many features for users.
+                                    Our members have discounted access to their bot.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/nft_thunder"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://www.nfthunder.io/"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.com/invite/nfthunder"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/waifu.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">Waifu</p>
+                                <p class="partner-type">TOOLS</p>
+                                <p class="partner-subtitle">
+                                    Waifu is an automation and minting bot with many features for users.
+                                    Our members have 50% discounted monthly access to their bot.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/fungiblewaifu"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://www.fungiblewaifu.com/"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.gg/fungiblewaifu"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+
+                        <div class="card-order">
+
+                            <div class="card-left">
+                                <img class="partner-logo" src="assets/images/partners/lendal.webp">
+                            </div>
+
+                            <div class="card-right">
+                                <p class="partner-title">LendalPro</p>
+                                <p class="partner-type">TOOLS</p>
+                                <p class="partner-subtitle">
+                                    LENDALPro hosts a suite of tools that exist in Tradingview. Their tools help
+                                    facilitate decision making processes for traders trading various coins.
+                                    Our members have free trials to their signal-based tools.</p>
+                                <div class="partner-links">
+                                    <a target="_blank" href="https://twitter.com/LENDALPro"><i
+                                            class="fa-brands fa-twitter fa-lg"></i></a>
+                                    <a target="_blank" href="https://lendalpro.trade/"><i
+                                            class="fa-solid fa-link fa-lg"></i></a>
+                                    <a target="_blank" href="https://discord.com/invite/lendalpro"><i
+                                            class="fa-brands fa-discord fa-lg"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+
                 </ul>
+
             </div>
 
-            <div class="nav-join">
-                <a href="https://opensea.io/collection/momentum-official">Join</a>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                        class="fas fa-chevron-left fa-sm iconx"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                        class="fas fa-chevron-right fa-sm iconx"></i></button>
             </div>
 
         </div>
 
-    </nav>
+    </div>
 
-    <main>
+</section>
 
-        <div class="main-container">
-            <h1 class="main-subtitle">Discover the next Big Thing.</h1>
-            <img class="logo" src="Group 16MOMENTUM MAIN ORANGE.svg"></img>
-            <h1 class="main-title">Experience the new generation of trading: Join Momentum.</h1>
+<section id="faq-section">
+
+    <div class="faq-container">
+
+        <div class="faq-titles">
+            <h3 class="section-subtitle faq-title">ABOUT</h3>
+            <h1 class="section-title faq-subtitle">FAQ</h1>
         </div>
 
-    </main>
-        
-    <section id="product-section">
+        <ul class="faq">
 
-        <div class="cards-container">
-
-            <div class="cards-titles">
-                <h3 class="section-subtitle">PRODUCT</h3>
-                <h1 class="section-title">Experience the new generation of trading.</h1>
-                <h2 class="section-description">Join Momentum and gain access to a network of experienced investors and traders who are always on the lookout for the latest mints and investment opportunities. </h2>
-            </div>
-
-            <div class="cards-grid">
-
-                <div class="info-card networking-card">
-                    <p class="card-title">Networking</p>
-                    <p class="card-description">Expand your network by connecting with the most successful traders in the industry.</p>
-                    <img src="Clip path groupNETWORKING.svg" class="card-illustration"></img>
+            <li>
+                <div class="q">
+                    <span class="question-p">What is Momentum?</span>
+                    <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
                 </div>
-    
-                <div class="info-card mint-card">
-                    <p class="card-title">Mint Monitors</p>
-                    <p class="card-description monitor-description"> Access to a suite of tools to maximize profitability in trades: <br>
 
-                        &#xB7; Profit Bot, wallet tracking and new verified contracts. <br> 
+                <div class="a">
+                    <p>We are a skilled group of traders and investors who operate as a private, exclusive collective.
+                        Our aim is to revolutionize and shape NFT culture.
+                        Our primary objective is to create a dynamic community of determined individuals who view NFTs
+                        as a promising route to financial independence and who are keen to connect with others on this
+                        journey.
+                </div>
+            </li>
 
-                        &#xB7; AlphaGardeners suite, Synergy droplist, Bluetracker to discover new projects early. <br> 
+            <li>
+                <div class="q">
+                    <span class="question-p">What benefits does holding a Momentum pass have?</span>
+                    <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
+                </div>
 
-                        &#xB7; Inhouse tools (NFT contract parser, Daily summaries ganerator, Contribution system and leaderboard for prizes, crypto movement alerts, Airdrop farming AIO bot + more in the works. <br>
+                <div class="a a-grant">
+                    <p>
+                        A membership to our collective will grant you: <br>
+
+                        &#xB7; Direct access to an experienced team with a track record of proven success. <br>
+
+                        &#xB7; A network of highly motivated and successful collectors & traders. <br>
+
+                        &#xB7; Curated alpha calls on upcoming projects. <br>
+
+                        &#xB7; Guidance on market conditions, techniques, and trading strategy. <br>
+
+                        &#xB7; Access to privately built, proprietary trading tools. We will have a dedicated
+                        development team who will consistently adapt & build to maintain an advantageous edge. <br>
+
+                        &#xB7; Many opportunities throughout the year to win whitelists & giveaways for upcoming
+                        projects. <br>
 
                     </p>
-
-
-                    <img src="Clip path groupMINT_MONITOR.svg" class="card-illustration"></img>
                 </div>
+            </li>
 
-                <div class="info-card alpha-card">
-                    <p class="card-title">Curated Alpha</p>
-                    <p class="card-description">Carefully curated alpha from top traders in the industry.</p>
-                    <img src="Clip path groupCURATED ALPHA.svg" class="card-illustration"></img>
+            <li>
+                <div class="q">
+                    <span class="question-p">How do I obtain a Momentum pass?</span>
+                    <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
                 </div>
-
-                <div class="info-card whitelist-card">
-                    <p class="card-title">Whitelist Opportunities</p>
-                    <p class="card-description">Exclusive early access to NFT launches, web3 apps and Momentum products, including highly anticipated mints.</p>
-                    <img src="Clip path groupWHITELISTS.svg" class="card-illustration"></img>
+                <div class="a">
+                    <p>If you are a student or small business owner you can access a 50% discount on the pro plan. Email
+                        us your username, we will adjust your plan and price</p>
                 </div>
- 
-                <div class="info-card education-card">
-                    <p class="card-title">Web3 Education</p>
-                    <p class="card-description">High quality web3 videos, daily charts and documentation.</p>
-                    <img src="Clip path groupEDUCATION.svg" class="card-illustration"></img>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="question-p">What happens if I decide to sell my Momentum pass?</span>
+                    <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
                 </div>
-
-                <div class="info-card partners-card">
-                    <p class="card-title">Exclusive Partnerships</p>
-                    <p class="card-description">Partnerships with top notch products and teams.</p>
-                    <img src="Clip path groupPARTNERSHIPS.svg" class="card-illustration"></img>
+                <div class="a">
+                    <p>In blognow we offer a clean and simple interface where you can write blogs in an easy way without
+                        the need to pay for publishing or a developer,
+                        you can publish from your cell phone or computer in an easy and simple way. Start blogging the
+                        easy way with blognow.</p>
                 </div>
+            </li>
 
-            </div>
+            <li>
+                <div class="q">
+                    <span class="question-p">How do I collaborate with Momentum?</span>
+                    <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
+                </div>
+                <div class="a">
+                    <p>In blognow we offer a clean and simple interface where you can write blogs in an easy way without
+                        the need to pay for publishing or a developer,
+                        you can publish from your cell phone or computer in an easy and simple way. Start blogging the
+                        easy way with blognow.</p>
+                </div>
+            </li>
 
+        </ul>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-info">
+            <p>© 2023 Momentum. All rights reserved.</p>
         </div>
 
-    </section> 
-    
-    <section>
-        <div class="the-pass-container">
-            
-        </div>
-    </section>
-
-    <section id="team-section">
-
-        <div class="team-container">
-                    
-            <div class="team-titles">
-                <h3 class="section-subtitle">TEAM</h3>
-                <h1 class="section-title">Meet our team</h1>
-                <h2 class="section-description section-description-team">The momentum team is a collective of NFT analysts, researchers, developers and investors.</h2>
-            </div>
-
-            <div class="owl-carousel team-grid">
-
-                <div class="team-card">
-                    <img class="team-pfp" src="AURA_MOMENTUM.png">
-                    <p class="team-title">Aura</p>
-                    <p class="team-subtitle">FOUNDER</p>
-                    <a href="https://twitter.com/NFTAura"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="LINKOMAN_MOMENTUM.png">
-                    <p class="team-title">Linkoman</p>
-                    <p class="team-subtitle">CRYPTO ANALYST</p>
-                    <a href="https://twitter.com/Linkomanft"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="APE_MOMENTUM.png">
-                    <p class="team-title">Ape</p>
-                    <p class="team-subtitle">DEFI RESEARCHER</p>
-                    <a href="https://twitter.com/Apenomics101"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="0X_AGONY.png">
-                    <p class="team-title">0xAgony</p>
-                    <p class="team-subtitle">DEVELOPER</p>
-                    <a href="https://twitter.com/0xAgony"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="galo_momentum.png">
-                    <p class="team-title">Galovdev</p>
-                    <p class="team-subtitle">DEVELOPER</p>
-                    <a href=""><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="DTK_MOMENTUM.png">
-                    <p class="team-title">DTK</p>
-                    <p class="team-subtitle">RESEARCHER</p>
-                    <a href="https://twitter.com/DTKcrypto"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="CATINHO_MOMENTUM.png">
-                    <p class="team-title">Catinho</p>
-                    <p class="team-subtitle">COMMUNITY MANAGER</p>
-                    <a href="https://twitter.com/CatinhoNFT"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="MRDOGE_MOMENTUM.jfif">
-                    <p class="team-title">MrDoge</p>
-                    <p class="team-subtitle">COLLAB MANAGER</p>
-                    <a href="https://twitter.com/Dogelikesnft"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="PRADA_MOMENTUM.png">
-                    <p class="team-title">Prada</p>
-                    <p class="team-subtitle">HEAD MARKETING</p>
-                    <a href="https://twitter.com/NFTPrada"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-                
-                <div class="team-card">
-                    <img class="team-pfp" src="TARZAN_MOMENTUM.png">
-                    <p class="team-title">Tarzan</p>
-                    <p class="team-subtitle">COLLAB MANAGER</p>
-                    <a href="https://twitter.com/tarzan_smol"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-                <div class="team-card">
-                    <img class="team-pfp" src="THEO_MOMENTUM.png">
-                    <p class="team-title">Theo</p>
-                    <p class="team-subtitle">RESEARCHER</p>
-                    <a href="https://twitter.com/theo2k2_"><i class="fa-brands fa-twitter fa-lg team-twitter-icon"></i></a>
-                </div>
-
-            </div>
-
+        <div class="footer-links">
+            <a href="https://opensea.io/collection/momentum-official"><i class="fa-solid fa-key footer-icon"></i>
+                OpenSea</a>
+            <a href="https://twitter.com/MomentumNFT_"><i class="fa-brands fa-twitter  footer-icon"></i> Twitter</a>
+            <a href="https://discord.com/invite/qmEbxr5BUM"><i class="fa-brands fa-discord  footer-icon"></i>
+                Discord</a>
         </div>
 
-    </section>
+    </div>
 
-    <section id="partnerships-section">
+</footer>
 
-        <div class="partnerships-container">
-
-                    <div class="partnership-titles">
-                        <h3 class="section-subtitle">PARTNERSHIPS</h3>
-                        <h1 class="section-title">The best partnerships in the space</h1>
-                        <h2 class="section-description">We strive to offer exceptional value to our members by partnering with leading brands and organizations in the industry.</h2>
-                    </div>
-
-                    <div class="glide">
-
-                        <div class="glide__track" data-glide-el="track">
-
-                                <ul class="glide__slides">
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="BREEZEAIO.png">
-                                            </div>
-
-                                            <div class="card-right">
-                                                <p class="partner-title">BreezeAIO</p>
-                                                <p class="partner-type">ANALYTICS</p>
-                                                <p class="partner-subtitle">
-                                                BreezeAIO is an analytical and automation bot with many features for users.
-                                                Our members receive 20% discounted monthly access to their tool.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/BreezeAIO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://discord.com/invite/breezeaio"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                    <a href="https://breeze.gg/"><i class="fa-brands fa-discord fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="3GM DEV.jpeg">
-                                            </div>
-
-                                            <div class="card-right">
-                                                <p class="partner-title">3gmdev</p>
-                                                <p class="partner-type">ANALYTICS</p>
-                                                <p class="partner-subtitle">
-                                                3gmdev is a host of various analytical and data science tools that can applied to trader's regiments such as identifying quick profit/loss during trades.
-                                                Our members have free access to 3GM's profit/loss bot.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/3gmdev"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://discord.com/invite/3gm"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                    <a href="https://3gm.dev/#/"><i class="fa-brands fa-discord fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="SYNERGY.png">
-                                            </div>
-
-                                            <div class="card-right">
-                                                <p class="partner-title">Synergy</p>
-                                                <p class="partner-type">NETWORK</p>
-                                                <p class="partner-subtitle">
-                                                SynergyPass is an exclusive alpha network. They focus on promoting empowerment, resources, and well-written research on the NFT landscape. Our members have free access to 
-                                                Matty's curated daily drop list and live-pings notifications.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/SynergyPass"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://discord.com/invite/synergy"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                    <a href="https://www.synergypass.io/"><i class="fa-brands fa-discord fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="NFT NERDS.jpeg">
-                                            </div>
-
-                                            <div class="card-right">
-                                                <p class="partner-title">NFT Nerds</p>
-                                                <p class="partner-type">TOOLS</p>
-                                                <p class="partner-subtitle">
-                                                NFTNerdsAI is an analytical driven platform. They focus on providing real-time analytics and charting software to help traders facilitate decision making processes.
-                                                Our members have discounted access and trials.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/NFTNerdsAI"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://nftnerds.ai/"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                    <a href="https://discord.com/invite/NFTNerdsr"><i class="fa-brands fa-discord fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="ALPHA GARDENERS LOGO.jpeg">
-                                            </div>
-
-                                            <div class="card-right">
-                                                <p class="partner-title">Alpha Gardeners</p>
-                                                <p class="partner-type">ANALYTICS</p>
-                                                <p class="partner-subtitle">
-                                                Alpha Gardeners is an all-in-one alpha discord with a complete toolkit for successful NFTs and Memecoins trading. Contract mint, wallets, and momentum tracking.
-                                                Our members have free access to their toolkit to track notable movements of prominent traders.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/alpha_gardeners"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://linktr.ee/alpha_gardeners"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                    <a href="https://discord.com/invite/ZCzudbbJhz"><i class="fa-brands fa-discord fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="NFT THUNDER.jpeg">
-                                            </div>
-
-                                            <div class="card-right">    
-                                                <p class="partner-title">Thunder</p>
-                                                <p class="partner-type">TOOLS</p>
-                                                <p class="partner-subtitle">
-                                                NFT Thunder is an automation and minting bot with many features for users.
-                                                Our members have discounted access to their bot.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/nft_thunder"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://www.nfthunder.io/"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                    <a href="https://discord.com/invite/nfthunder"><i class="fa-brands fa-discord fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="WAIFU.png">
-                                            </div>
-
-                                            <div class="card-right">
-                                                <p class="partner-title">Waifu</p>
-                                                <p class="partner-type">TOOLS</p>
-                                                <p class="partner-subtitle">
-                                                Waifu is an automation and minting bot with many features for users.
-                                                Our members have 50% discounted monthly access to their bot.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/fungiblewaifu"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://www.fungiblewaifu.com/"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="LENDAL PRO TRADER.jpeg">
-                                            </div>
-                                            
-                                            <div class="card-right">
-                                                <p class="partner-title">LendalPro</p>
-                                                <p class="partner-type">TOOLS</p>
-                                                <p class="partner-subtitle">
-                                                LENDALPro hosts a suite of tools that exist in Tradingview. Their tools help facilitate decision making processes for traders trading various coins. 
-                                                Our members have free trials to their signal-based tools.</p>
-                                                <div class="partner-links">
-                                                    <a href="https://twitter.com/LENDALPro"><i class="fa-brands fa-twitter fa-lg"></i></a>
-                                                    <a href="https://lendalpro.trade/"><i  class="fa-solid fa-link fa-lg"></i></a>
-                                                    <a href="https://discord.com/invite/lendalpro"><i class="fa-brands fa-discord fa-lg"></i></a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="glide__slide">
-
-                                        <div class="card-order">
-
-                                            <div class="card-left">
-                                                <img class="partner-logo" src="Group 5719LOGO CON BACKGROUND PARA PARTNER.jpeg">
-                                            </div>
-                                            
-                                            <div class="card-right">
-                                                <p class="partner-title">In-House</p>
-                                                <p class="partner-type">TOOLS</p>
-                                                <p class="partner-subtitle">Momentum also offers in-house tools including our own private RPC node. 
-                                                More tools will be developed in the near future to be utilized by our members within their trading regiment.</p>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                </ul>
-
-                        </div>
-
-                        <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left fa-sm iconx"></i></button>
-                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right fa-sm iconx"></i></button>
-                        </div>
-
-                    </div>
-
-        </div>
-        
-    </section>
-
-    <section id="faq-section">
-
-            <div class="faq-container">
-
-                <div class="faq-titles">
-                    <h3 class="section-subtitle faq-title">ABOUT</h3>
-                    <h1 class="section-title faq-subtitle">FAQ</h1>
-                </div>
-                
-                <ul class="faq">
-
-                    <li>
-                        <div class="q">
-                            <span class="question-p">What is momentum?</span>
-                            <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
-                        </div>
-    
-                        <div class="a">
-                            <p>We are a skilled group of traders and investors who operate as a private, exclusive collective. Our aim is to revolutionize and shape NFT culture.
-                                Our primary objective is to create a dynamic community of determined individuals who view NFTs as a promising route to financial independence and who are keen to connect with others on this journey.              
-                        </div>
-                    </li>
-    
-                    <li>
-                        <div class="q">
-                            <span class="question-p">What benefits does holding a momentum pass have?</span>
-                            <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
-                        </div>
-    
-                        <div class="a a-grant">
-                            <p>
-                                A membership to our collective will grant you: <br>
-
-                                &#xB7; Direct access to an experienced team with a track record of proven success. <br> 
-                                
-                                &#xB7; A network of highly motivated and successful collectors & traders. <br>
-                                
-                                &#xB7; Curated alpha calls on upcoming projects. <br>
-                                
-                                &#xB7; Guidance on market conditions, techniques, and trading strategy. <br>
-                                
-                                &#xB7; Access to privately built, proprietary trading tools. We will have a dedicated development team who will consistently adapt & build to maintain an advantageous edge. <br>
-                                
-                                &#xB7; Many opportunities throughout the year to win whitelists & giveaways for upcoming projects. <br>
-                            
-                            </p>
-                        </div>
-                    </li>
-    
-                    <li>
-                        <div class="q">
-                            <span class="question-p">How do I obtain a Momentum pass?</span>
-                            <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
-                        </div>
-                        <div class="a">
-                            <p>If you are a student or small business owner you can access a 50% discount on the pro plan. Email us your username, we will adjust your plan and price</p>
-                        </div>
-                    </li>
-    
-                    <li>
-                        <div class="q">
-                            <span class="question-p">What happens if I decide to sell my momentum pass?</span>
-                            <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
-                        </div>
-                        <div class="a">
-                            <p>In blognow we offer a clean and simple interface where you can write blogs in an easy way without the need to pay for publishing or a developer, 
-                               you can publish from your cell phone or computer in an easy and simple way. Start blogging the easy way with blognow.</p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="q">
-                            <span class="question-p">How do I collaborate with momentum?</span>
-                            <span class="arrow"><i class="fa-solid fa-plus fa-sm"></i></span>
-                        </div>
-                        <div class="a">
-                            <p>In blognow we offer a clean and simple interface where you can write blogs in an easy way without the need to pay for publishing or a developer, 
-                               you can publish from your cell phone or computer in an easy and simple way. Start blogging the easy way with blognow.</p>
-                        </div>
-                    </li>
-    
-                </ul>
-
-            </div>
-
-    </section>
-
-    <footer>
-
-        <div class="footer-container">
-
-            <div class="footer-info">
-                <p>© 2023 Momentum.  All rights reserved.</p>
-            </div>
-
-            <div class="footer-links">
-                <a href="https://opensea.io/collection/momentum-official"><i class="fa-solid fa-key footer-icon"></i> OpenSea</a>
-                <a href="https://twitter.com/MomentumNFT_"><i class="fa-brands fa-twitter  footer-icon"></i> Twitter</a>
-                <a href="https://discord.com/invite/qmEbxr5BUM"><i class="fa-brands fa-discord  footer-icon"></i> Discord</a>
-            </div>
-
-        </div>
-
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
-    <script>
-      new Glide('.glide', {
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+<script>
+    new Glide('.glide', {
         type: 'carousel',
         perView: 1,
         focusAt: 'center',
@@ -582,8 +659,8 @@
         autoplay: 5000,
         hoverpause: true,
         keyboard: true
-      }).mount();
-    </script>
+    }).mount();
+</script>
 
 </body>
 </html>
