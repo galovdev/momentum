@@ -424,7 +424,7 @@ main {
 .team-card {
     text-align: center;
     cursor: pointer;
-    background: linear-gradient(180deg, rgba(149, 149, 238, 0.1) 0%, rgba(91, 91, 218, 0.06) 99.85%);
+    background: linear-gradient(0deg, rgba(149, 149, 238, 0.1) 0%, rgba(91, 91, 218, 0.06) 99.85%);
     mix-blend-mode: normal;
     border-radius: 20px;
     margin: 2em auto 4em auto;
