@@ -364,7 +364,7 @@ main {
 }
 
 .info-card {
-    background: linear-gradient(180deg, rgb(27, 35, 51) 0%, rgb(24, 36, 53) 99.85%);
+    background: linear-gradient(180deg, rgba(149, 149, 238, 0.1) 0%, rgba(91, 91, 218, 0.06) 99.85%);
     border-radius: 20px;
     padding: 1.88em;
     display: flex;
@@ -424,7 +424,7 @@ main {
 .team-card {
     text-align: center;
     cursor: pointer;
-    background: linear-gradient(180deg, rgb(27, 35, 51) 0%, rgb(24, 36, 53) 99.85%);
+    background: linear-gradient(180deg, rgba(149, 149, 238, 0.1) 0%, rgba(91, 91, 218, 0.06) 99.85%);
     mix-blend-mode: normal;
     border-radius: 20px;
     margin: 2em auto 4em auto;
@@ -479,7 +479,7 @@ main {
 
 .card-order {
     display: flex;
-    background: linear-gradient(180deg, rgb(27, 35, 51) 0%, rgb(24, 36, 53) 99.85%);
+    background: linear-gradient(180deg, rgba(149, 149, 238, 0.1) 0%, rgba(91, 91, 218, 0.06) 99.85%);
     padding: 1.8em 4em;
     border-radius: 20px;
     min-height: 300px;
@@ -609,7 +609,7 @@ main {
     letter-spacing: 0.01rem;
     border-radius: 0.88em;
     margin: 0.8em 0em;
-    background: linear-gradient(180deg, rgb(27, 35, 51) 0%, rgb(24, 36, 53) 99.85%);
+    background: linear-gradient(180deg, rgba(149, 149, 238, 0.1) 0%, rgba(91, 91, 218, 0.06) 99.85%);
 }
 
 .q:hover,
